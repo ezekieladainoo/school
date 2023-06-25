@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E.M.S-Core Maths</title>
+        <link rel="stylesheet" href="CMaths.css">
+    </head>
+    <body>
+         <div class="container">
+            <div class="right-slidebar">
+                <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = ''" class="operator">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)" class="operator" >
+                    <input type="button" value="." onclick="display.value += '.'" class="operator">
+                    <input type="button" value="/" onclick="display.value += '/'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input type="button" value="*" onclick="display.value += '*'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input type="button" value="-" onclick="display.value += '-'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input type="button" value="+" onclick="display.value += '+'" class="operator">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator">
+                </div>
+            </form>        
+            </div>
+        </div>
+        <div class="app">
+        	<h1>Core Maths</h1>
+        	<div class="quiz">
+        		<h2 id="question">Question goes here</h2>
+        		<div id="answer-buttons">
+        			<button class="btn">Answer 1</button>
+        			<button class="btn">Answer 2</button>
+        			<button class="btn">Answer 3</button>
+        			<button class="btn">Answer 4</button>
+        		</div>
+        		<button id="next-btn">Next</button>
+        	</div>
+        </div>   
+    </div>
+</div>
+        <script src="CMaths.js"></script>
+    </body>
+</html>
